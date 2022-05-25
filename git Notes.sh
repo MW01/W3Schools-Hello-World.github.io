@@ -24,5 +24,16 @@ git status --short
 #     D - Deleted files
 NOTE.
 
+git log 
+
+# For Help
+git command -help # or git command --help
+git help --all 
+    # shift+g, then q
+
+git branch make-up-a-name
+git branch # We can see the new branch with the name "hello-world-images", but 
+           # the * beside master specifies that we are currently on that branch.
+git checkout the-branch-name-created-above
 
 
