@@ -7,15 +7,13 @@
     6. Branches
 Git
 ########################################################
-
-
-
-
 # Help
 git help 
 git --help
-git command -help   # shows help in the comman shell
+git help --all      # shift+g, then q  - to exit help
+git command -help   # shows help in the command shell
 git command --help  # to open a local web page for the topic - the pages are in  C:\Program Files\Git\mingw64\share\doc\git-doc\
+
 
 
 # Version, Configuration and Status
@@ -33,11 +31,13 @@ git status --short
 NOTE.
 
 
+
 # Starting a new project
 mkdir myproject
 cd myproject
 git init 
 git status
+
 
 
 # Staging files 
@@ -49,31 +49,21 @@ git add -A                  # shorthand for 'git add --all'
 git add -a                  # commits any already staged files that have been modified
 git rm --cached <file>      # to unstage
 
-git log 
-
-# For Help
-git command -help # or git command --help
-git help --all 
-    # shift+g, then q
-
-git branch make-up-a-name
-git branch # We can see the new branch with the name "hello-world-images", but 
-           # the * beside master specifies that we are currently on that branch.
-git checkout the-branch-name-created-above
-# make changes
-# git commit --all to commit changes to the branch
-# git checkout -b make-a-name   # will create a branch if it does not exist and move to it.
 
 
 # Committing Changes
 git commit -m "First release of Hello World!" # -m is for 'message'
+git commit --all                              # commit changes to the branch
 git -a                                        # skips staging and commits the already-tracked and modified files
+git log                                       # shows the commit logs
+
 
 
 # Branches
 git branch make-up-a-branch-name
 git branch                                  # list branches - *is the current branch
 git checkout branch-you-want-to-checkout 
+git checkout -b make-a-name                 # creates a branch if it does not exist and moves to it
 git status                                  # will also show the current branch
       # make changes 
       # git add --all                   # stage the changes
