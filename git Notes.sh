@@ -49,6 +49,20 @@ git add -A                  # shorthand for 'git add --all'
 git add -a                  # commits any already staged files that have been modified
 git rm --cached <file>      # to unstage
 
+git log 
+
+# For Help
+git command -help # or git command --help
+git help --all 
+    # shift+g, then q
+
+git branch make-up-a-name
+git branch # We can see the new branch with the name "hello-world-images", but 
+           # the * beside master specifies that we are currently on that branch.
+git checkout the-branch-name-created-above
+# make changes
+# git commit --all to commit changes to the branch
+# git checkout -b make-a-name   # will create a branch if it does not exist and move to it.
 
 
 # Committing Changes
